@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Elements Demo</title>
+</head>
+<body>
+    <h3>HTML 5 color Element</h3>
+    <form>
+        <label>Select your favorite color: 
+            <input type="color" value="#000000">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>HTML 5 input restriction as number</h3>
+    <form>
+        <label>Quantity (between 1 and 5): 
+            <input type="number" min="1" max="5" value="5">
+        </label>
+        <button type="submit">Send</button>
+    </form>
+
+    <h3>HTML 5 data Encryption</h3>
+    <form>
+        <label>Username: 
+            <input type="text" value="admin">
+        </label>
+        <label>Encryption: 
+            <select>
+                <option value="2048 (High Grade)">2048 (High Grade)</option>
+                <option value="1024 (Medium Grade)">1024 (Medium Grade)</option>
+                <option value="512 (Low Grade)">512 (Low Grade)</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>HTML 5 date picker</h3>
+    <form>
+        <label>Birthday: 
+            <input type="date" value="2014-10-01">
+        </label>
+        <button type="submit">Send</button>
+    </form>
+
+    <h3>HTML 5 Audio Element</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>HTML 5 CANVAS (graphics and text)</h3>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+        Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+        // Draw "Hello World" on the canvas
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.font = '30px Arial';
+        ctx.fillText('Hello World', 10, 50);
+    </script>
+</body>
+</html>
