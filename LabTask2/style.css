@@ -1,0 +1,21 @@
+h2{
+    height: 6rem;
+    border: 1px solid black;
+}
+
+h1{
+    height: 6rem;
+    color: pink;
+}
+
+
+#first_para{
+    font-size: 2rem;
+    color: red;
+}
+
+.sec_para{
+    height: 6rem;
+    color: blue;
+}
+
