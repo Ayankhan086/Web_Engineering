@@ -19,3 +19,20 @@ h1{
     color: blue;
 }
 
+.blueblock{
+    font-size: 3rem;
+    background-color: blue;
+    color: white;
+}
+
+.diff{
+    color: red;
+}
+
+
+.first_box_model{
+    padding: 25px;
+    border: 1px solid black;
+    margin: 15px;
+    font-size: 30px;
+}

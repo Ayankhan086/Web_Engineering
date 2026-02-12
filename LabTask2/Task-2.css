@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    background-color: #000;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00f0ff;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 20px;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #00f0ff 0%, #00d4ff 100%);
+    min-height: 100vh;
+}
+
+#home h1 {
+    font-size: 120px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Services Section */
+#services {
+    background-color: #f5f5f5;
+}
+
+#services .content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00d4ff;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #fff;
+}
+
+#portfolio .content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    background: #f5f5f5;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item::after {
+    content: 'View Project';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 240, 255, 0.9);
+    padding: 15px 30px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    color: #000;
+}
+
+.portfolio-item:hover::after {
+    opacity: 1;
+}
+
+/* About Section */
+#about {
+    background-color: #f5f5f5;
+}
+
+#about .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #000;
+    color: #fff;
+}
+
+#contact .content {
+    max-width: 600px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #00f0ff 0%, #00d4ff 100%);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #000;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 60px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    #services h2,
+    #portfolio h2,
+    #about h2,
+    #contact h2 {
+        font-size: 36px;
+    }
+
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
