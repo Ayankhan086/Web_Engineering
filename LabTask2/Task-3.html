@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="Task-3.css">
 </head>
 <body>
-    <div class="container">
-
-        <!-- First Menu - Simple -->
-        <div class="menu-section">
-            <h3>First Menu - Simple Menu</h3>
-            <nav class="menu menu-first">
+    <div class="page-container">
+        <!-- First Menu - Simple Black Menu -->
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-first">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
@@ -23,10 +21,9 @@
             </nav>
         </div>
 
-        <!-- Second Menu - Font Size Change on Hover -->
-        <div class="menu-section">
-            <h3>Second Menu - Font Size Change on Hover</h3>
-            <nav class="menu menu-second">
+        <!-- Second Menu - Red Menu with Font Size Change -->
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-second">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
@@ -37,10 +34,9 @@
             </nav>
         </div>
 
-        <!-- Third Menu - Background Color Change and Border on Hover -->
-        <div class="menu-section">
-            <h3>Third Menu - Background Color & Border on Hover</h3>
-            <nav class="menu menu-third">
+        <!-- Third Menu - Green/Black Menu with Border -->
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-third">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
@@ -51,10 +47,9 @@
             </nav>
         </div>
 
-        <!-- Fourth Menu - Active State -->
-        <div class="menu-section">
-            <h3>Fourth Menu - Active State</h3>
-            <nav class="menu menu-fourth">
+        <!-- Fourth Menu - Active State Menu -->
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-fourth">
                 <ul>
                     <li><a href="#home" class="active">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
@@ -65,13 +60,15 @@
             </nav>
         </div>
 
-        <p class="note">The first menu should be responsive in nature as shown below.</p>
-
-        <!-- Responsive Menu -->
-        <div class="menu-section">
-            <h3>Responsive Menu</h3>
-            <nav class="menu menu-responsive">
-                <ul id="menuList">
+        <!-- Responsive Menu Version -->
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-responsive">
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navMenu">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -80,10 +77,6 @@
                 </ul>
             </nav>
         </div>
-
-        
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
